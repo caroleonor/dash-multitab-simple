@@ -4,7 +4,7 @@ import dash_html_components as html
 from dash.dependencies import Input, Output
 
 tab_3_layout = html.Div([
-    html.H1('Page 3'),
+    html.H1('How much have you applied the knowledge in the past 3 months?'),
     html.Div([
         html.Div([
             html.H6('Select one:'),
