@@ -4,7 +4,7 @@ import dash_html_components as html
 from dash.dependencies import Input, Output
 
 tab_3_layout = html.Div([
-    html.H1('How much have you applied the knowledge in the past 3 months?'),
+    html.H1('What percentage have you applied the knowledge in the past 3 months?'),
     html.Div([
         html.Div([
             html.H6('Select one:'),
@@ -13,7 +13,7 @@ tab_3_layout = html.Div([
                 min=0,
                 max=100,
                 step=10,
-                marks={i:str(i) for i in range(0, 100, 10)},
+                marks={i:str(i) for i in range(0, 101, 10)},
                 value=50,
             ),
         ], className='four columns'),
