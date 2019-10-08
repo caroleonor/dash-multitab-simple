@@ -11,10 +11,10 @@ tab_3_layout = html.Div([
             dcc.Slider(
                 id='page-3-slider',
                 min=0,
-                max=100,
-                step=10,
+                max=10,
+                step=1,
                 marks={i:str(i) for i in range(0, 11)},
-                value=50,
+                value=5,
             ),
         ], className='four columns'),
         html.Div([
