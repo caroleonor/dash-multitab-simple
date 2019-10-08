@@ -9,10 +9,10 @@ from tabs import tab_3
 
 ########### Define your variables ######
 
-myheading1 = 'Plotly Dash -- multiple tabs'
+myheading1 = 'levels of evaluation'
 tabtitle = 'dash tabs'
 sourceurl = 'https://dash.plot.ly/dash-core-components/tabs'
-githublink = 'https://github.com/austinlasseter/dash-multitab-simple'
+githublink = 'https://github.com/caroleonor/dash-multitab-simple/edit/master/app.py'
 
 ########### Initiate the app
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
@@ -28,9 +28,9 @@ app.layout = html.Div([
     html.H1(myheading1),
     dcc.Tabs(id="tabs-example", value='tab-1-example',
             children=[
-                dcc.Tab(label='Tab One', value='tab-1-example'),
-                dcc.Tab(label='Tab Two', value='tab-2-example'),
-                dcc.Tab(label='Tab Three', value='tab-3-example'),
+                dcc.Tab(label='Level One', value='tab-1-example'),
+                dcc.Tab(label='Level Two', value='tab-2-example'),
+                dcc.Tab(label='Level Three', value='tab-3-example'),
     ]),
     html.Div([
         html.Div(id='tabs-content-example'),
