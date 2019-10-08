@@ -4,14 +4,14 @@ import dash_html_components as html
 from dash.dependencies import Input, Output
 
 tab_1_layout = html.Div([
-    html.H1('Page 1'),
+    html.H1('Were the training activities engaging?'),
     html.Div([
         html.Div([
             html.H6('Select one:'),
             dcc.Dropdown(
                 id='page-1-dropdown',
-                options=[{'label': i, 'value': i} for i in ['burger', 'fries', 'milkshake']],
-                value='burger',
+                options=[{'label': i, 'value': i} for i in ['Yes', 'No', 'Not Sure']],
+                value='Yes',
                 style = dict(
                             width = '70%',
                             display = 'inline-block',
