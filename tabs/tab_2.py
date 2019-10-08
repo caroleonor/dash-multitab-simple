@@ -4,14 +4,14 @@ import dash_html_components as html
 from dash.dependencies import Input, Output
 
 tab_2_layout = html.Div([
-    html.H1('Page 2'),
+    html.H1('How did the training close the performance gap?'),
     html.Div([
         html.Div([
             html.H6('Select one:'),
             dcc.RadioItems(
                 id='page-2-radios',
-                options=[{'label': i, 'value': i} for i in ['Orange', 'Blue', 'Red']],
-                value='Orange',
+                options=[{'label': i, 'value': i} for i in ['Closed the gap', 'Narrowed the gap', 'Did not change']],
+                value='Closed the gap',
                 style = dict(
                     width = '70%',
                     display = 'inline-block',
